@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微软风格页面</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 大标题部分 -->
+        <h1 class="main-title">这是一个大标题</h1>
+        <p class="intro-text">我是陈则宇</p>
+
+        <!-- 小标题部分 -->
+        <h2 class="sub-title">这是一个小标题</h2>
+        <p class="sub-text">这是一个小标题下的内容</p>
+        <div class="counter-container">
+            <div class="counter">计数：<span id="count">0</span></div>
+            <button class="counter-button" onclick="incrementCounter()">点击增加</button>
+        </div>
+    </div>
+    <script>
+        let count = 0;
+        function incrementCounter() {
+            count++;
+            document.getElementById('count').innerText = count;
+        }
+    </script>
+</body>
+</html>
